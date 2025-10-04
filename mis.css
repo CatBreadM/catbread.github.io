@@ -1,0 +1,30 @@
+img{
+ width: 33.123%;
+ height: auto;
+ margin: 0.5% auto;
+ border-radius: 8%;
+}
+p {
+ animation: scroll 2s;
+ white-space: nowrap; 
+}
+.p1 {
+ animation: scroll2 2s;
+ white-space: nowrap; 
+}
+.amogus {
+  width: 500px;
+  height: auto;
+  background-color: rgb(165, 42, 42);
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden
+}
+@keyframes scroll {
+  from {margin-left: 200%;}
+  to {margin-left: 0%;}
+}
+@keyframes scroll2 {
+  from {margin-left: -350%;}
+  to {margin-left: 0%;}
+}
