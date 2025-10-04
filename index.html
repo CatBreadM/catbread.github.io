@@ -1,50 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Движение одного изображения за другим</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            width: 500px;
-            height: 200px;
-            border: 2px solid #333;
-            overflow: hidden;
-            position: relative;
-            background-color: white;
-        }
-
-        .moving-object {
-            position: absolute;
-            width: 100px;
-            animation: move 4s linear infinite;
-        }
-
-        .moving-object.second {
-            animation-delay: 0.6s; /* Задержка, чтобы второе изображение двигалось за первым */
-        }
-
-        @keyframes move {
-            0% { left: -100px; }   /* Начинает за пределами слева */
-            100% { left: 500px; }  /* Уходит за пределы справа */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Первое изображение -->
-        <img src="abstrakt.jpeg" alt="Изображение 1" class="moving-object">
-
-        <!-- Второе изображение (следует за первым) -->
-        <img src="abstrakt2.jpeg" alt="Изображение 2" class="moving-object second">
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>туда сюда</title>
+  <link rel="stylesheet" href="mis.css">    
+  <style>
+    body{background-image: url(https://img.goodfon.ru/original/2880x1800/f/ea/background-rainbow-colorful-colors-splash-painting-abstract.jpg)}
+   </style>
+ </head>    
+ <body>
+    <div style="text-align: center;font-family:comic sans ms;color:rgb(242, 242, 242);" class="amogus" >
+    <h1>ща как будет ваще</h1>
+    <p>Случайная</p>
+    <p class="p1">Случайный элемент</p>
+    <p>Дискретная случайная величина</p>      
+    <p class="p1">Случайная смерть анархиста</p>
+    <p>Степени свободы (теория вероятностей)</p>
+    <p class="p1"> </p>
     </div>
-</body>
+    <div class="">
+    <img src="mashini 2.jpg">  
+    <img src="mashini 2.jpg">
+    <img src="mashini 2.jpg">  
+    <img src="mashini 2.jpg">  
+    <img src="mashini 2.jpg">
+    <img src="mashini 2.jpg">  
+    </div>
+ </body>
 </html>
