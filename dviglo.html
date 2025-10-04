@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Движение одного изображения за другим</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 500px;
+            height: 200px;
+            border: 2px solid #333;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+        }
+
+        .moving-object {
+            position: absolute;
+            width: 100px;
+            animation: move 4s linear infinite;
+        }
+
+        .moving-object.second {
+            animation-delay: 0.6s; /* Задержка, чтобы второе изображение двигалось за первым */
+        }
+
+        @keyframes move {
+            0% { left: -100px; }   /* Начинает за пределами слева */
+            100% { left: 500px; }  /* Уходит за пределы справа */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Первое изображение -->
+        <img src="abstrakt.jpeg" alt="Изображение 1" class="moving-object">
+
+        <!-- Второе изображение (следует за первым) -->
+        <img src="abstrakt2.jpeg" alt="Изображение 2" class="moving-object second">
+    </div>
+</body>
+</html>
